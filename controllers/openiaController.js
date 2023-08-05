@@ -17,7 +17,7 @@ exports.summaryController = async (req, res) => {
     });
     if (data) {
       if (data.choices[0].text) {
-        return res.status(200).json(data.choices[0].text);
+        return res.status(200).json(data.choices[0].text); 
       }
     }
   } catch (err) {
