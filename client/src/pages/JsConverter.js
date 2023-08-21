@@ -28,7 +28,7 @@ const JsConverter = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("/api/v1/openai/js-converter", {
+      const { data } = await axios.post("https://aivers.onrender.com/api/v1/openai/js-converter", {
         text,
       });
       console.log(data);
@@ -127,7 +127,7 @@ const JsConverter = () => {
               lineHeight: "450px",
             }}
           >
-            Your Code Will Apprea Here
+            Your Code Will Appear Here
           </Typography>
         </Card>
       )}
